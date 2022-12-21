@@ -7,17 +7,17 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails51 for more book information.
 #---
 # be sure to change these values
-user = 'Heahmund'
-domain = 'shopf.com'
+user = 'wicked'
+domain = '51.250.71.158'
 
 # adjust if you are using RVM, remove if you are not
 set :rvm_type, :system
-set :rvm_ruby_string, 'ruby-2.6.1/'
+set :rvm_ruby_string, 'ruby-2.4.1/'
 
 # file paths
-set :application, 'shopf'
-set :repo_url, "git@github.com:Heahmund/shopf.git"
-set :deploy_to, "/home/wicked/git/shopf.git/shopf"
+set :application, 'depot'
+set :repo_url, "#{user}@#{domain}:git/#{fetch(:application)}.git"
+set :deploy_to, "/home/#{user}/deploy/#{fetch(:application)}"
 
 # distribute your applications across servers (the instructions below put them
 # all on the same server, defined above as 'domain', adjust as necessary)

@@ -22,7 +22,7 @@ set :rvm_type, :user
 set :rvm_ruby_version, RUBY_VERSION
 
 append :linked_dirs, "log", "tmp"
-append :linked_files, 'config/database.yml'
+append :linked_files, 'config/database.yml', 'config/master.key'
 
 namespace :deploy do
   task :restart => 'monit:restart'

@@ -1,0 +1,249 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+require_tree .
+ *= require_self
+ */
+ .locale {
+  float: right;
+  margin: 1em;
+  }
+ body {background: rgb(255,226,202);
+
+    margin: 0;
+    padding: 0;
+    }
+    header.main {
+      background: rgb(66,159,184)
+        img {
+            height: 13.0em;
+
+            }
+
+    text-align: center; // center on mobile
+    @media (min-width: 30em) {
+      height:  12em;
+      background: linear-gradient(90deg, rgba(66,159,184,1) 30%, rgba(110,204,228,1) 40%, rgba(255,255,255,0) 90%);
+        text-align: left; // left align on desktop
+    }
+
+
+    margin: 0;
+    h1 {
+
+        display: none;
+        @media (min-width: 40em) {
+            vertical-align: 150px;
+
+            color: rgb(255, 255, 255);
+            padding-inline-start: 5px;
+            margin-block-start: 0em;
+            display:  contents;
+            font-size: 520%;
+            font-style: oblique;
+
+
+
+
+
+    }
+
+    }
+}
+ul {
+    display: block;
+    list-style-type: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+.content1 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column; // mobile is horizontally laid out
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+
+    img {
+        height: 13.0em;
+        }
+    @media (min-width: 30em) {
+        img {
+            height: 13.0em;
+            }
+        flex-direction: row; // desktop is vertically laid out
+        -webkit-box-orient: horizontal;
+}
+}
+    .content {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column; // mobile is horizontally laid out
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        img {
+            height: 13.0em;
+            clip-path: circle(50%);
+
+            }
+        @media (min-width: 30em) {
+            img {
+                height: 13.0em;
+                }
+            flex-direction: row; // desktop is vertically laid out
+            -webkit-box-orient: horizontal;
+
+    }
+
+    nav {
+        padding-bottom: 1em;
+        background: rgb(43,76,154);
+        text-align: center; // mobile has centered nav
+        @media (min-width: 30em) {
+            max-width: 11em;
+            text-align: left; // desktop nav is left-aligned
+            padding: 1em; // and needs more padding
+            border-bottom-right-radius: 250px 100px;
+            padding-inline-start: 1em;box-shadow: inset 5em 1em  rgb(0,39,130);
+    }
+    ul {
+        list-style: none !important;
+        margin: 0;
+        padding: 0;
+
+        @media (min-width: 30em) { width:    10em;
+            padding-right: 1em; // give desktop some extra space
+    }
+    li {border-bottom: ridge rgb(255, 255, 255);
+
+        margin: 0.5;
+        padding: 0.1em;
+        text-transform: uppercase;
+        letter-spacing: 0.354em;
+        a {
+            color: rgb(255, 255, 255);
+            font-size: x-large;
+            font-style:italic;
+            text-decoration: none !important;
+         }
+         a:hover {
+        background: none;
+
+         }
+
+      }
+    }
+}
+    main {
+      padding: 0.5em;
+      background: rgb(255,226,202);
+
+    }
+
+}
+#cart {
+    article {
+    h2 {
+    margin-top: 0;
+    }
+    background: white;
+    border-radius: 0.5em;
+    margin: 1em;
+    padding: 1.414em;
+    @media (min-width: 30em) {
+    margin: 0; // desktop doesn't need this margin
+    }
+    }
+    }
+    .shop_form {
+
+        padding: 0 2em;
+        h1 {
+          font-size: 1.99em;
+          line-height: 1.41em;
+          margin-bottom: 0.5em;
+          padding: 0;
+        }
+        .field, .actions {
+          margin-bottom: 0.5em;
+          padding: 0;
+        }
+        .actions {
+          text-align: right;
+          padding: 1em 0;
+        }
+        input, textarea, select, option {
+          border: solid thin #888;
+          box-sizing: border-box;
+          font-size: 1em;
+          padding: 1.5em; line-height: 1.41em;
+          width: 100%;
+        }
+        label {
+          padding: 0.5em 0;
+        }
+        input[type="submit"] {
+          background-color: #bfb;
+          border-radius: 0.354em;
+          border: solid thin #888;
+          color: black;
+          font-size: 1.41em;
+          font-weight: bold;
+          padding: 0.354em 1em;
+        }
+        input[type="submit"]:hover {
+          background-color: #9d9;
+        }
+        // Also, clean up the error styling
+        #error_explanation {
+          background-color: white;
+          border-radius: 1em;
+          border: solid thin red;
+          margin-bottom: 0.5em;
+          padding: 0.5em;
+          width: 100%;
+          h2 {
+            background: none;
+            color: red;
+            font-size: 1.41em;
+            line-height: 1.41em;
+            padding: 1em;
+          }
+          ul {
+            margin-top: 0;
+            li {
+              color: red;
+              font-size: 1em;
+            }
+          }
+        }
+        .field_with_errors {
+          background: none;
+          color: red;
+          width: 100%;
+          label {
+            font-weight: bold;
+          }
+          label::before {
+            content: "! ";
+          }
+          input,textarea {
+            background: pink;
+          }
+        }
+      }

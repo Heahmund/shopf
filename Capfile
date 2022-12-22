@@ -42,7 +42,7 @@ require "capistrano/rails/migrations"
 #END_HIGHLIGHT
 #START_HIGHLIGHT
 require "capistrano/passenger"
-require 'capistrano/puma
+require 'capistrano/puma'
 install_plugin Capistrano::Puma
 #END_HIGHLIGHT
 

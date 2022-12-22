@@ -9,15 +9,15 @@ install_plugin Capistrano::SCM::Git
 
 require "capistrano/rvm"
 require 'capistrano/puma'
-install_plugin Capistrano::Puma
-install_plugin Capistrano::Puma::Monit
-#install_plugin Capistrano::Puma::Daemon
-install_plugin Capistrano::Puma::Systemd
+
 require "capistrano/bundler"
 require "capistrano/rails/assets"
 require "capistrano/rails/migrations"
 require 'capistrano/monit'
-
+install_plugin Capistrano::Puma
+#install_plugin Capistrano::Puma::Monit
+#install_plugin Capistrano::Puma::Daemon
+install_plugin Capistrano::Puma::Systemd
 # Include cron jobs gem
 require "whenever/capistrano"
 

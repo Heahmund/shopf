@@ -42,6 +42,8 @@ require "capistrano/rails/migrations"
 #END_HIGHLIGHT
 #START_HIGHLIGHT
 require "capistrano/passenger"
+require 'capistrano/puma
+install_plugin Capistrano::Puma
 #END_HIGHLIGHT
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined

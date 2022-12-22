@@ -1,6 +1,6 @@
 #!/usr/bin/env puma
 
-APP_ROOT = '/home/webuser/www/diler'.freeze
+APP_ROOT = '/home/wicked/www/shopf'.freeze
 
 # The directory to operate out of.
 #

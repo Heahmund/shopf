@@ -58,7 +58,7 @@ group :development do
   gem 'capistrano-passenger', require: false
   gem 'capistrano3-monit', require: false
   gem 'capistrano-rake', require: false
-  gem 'capistrano3-puma', github: "seuros/capistrano-puma"
+  gem 'capistrano3-puma', '>= 5.2.0', github: "seuros/capistrano-puma"
 end
 
 group :test do

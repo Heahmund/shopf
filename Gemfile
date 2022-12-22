@@ -10,6 +10,7 @@ gem 'rails', '~> 5.2.3'
 # Use Puma as the app server
 #gem 'puma', '~> 5.0'
 gem 'puma', '~> 3.7'
+gem 'whenever', require: false
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -59,6 +60,7 @@ group :development do
   gem 'capistrano-passenger', require: false
   gem 'capistrano3-monit', require: false
   gem 'capistrano-rake', require: false
+  
   #gem 'capistrano3-puma', '>= 5.2.0', github: "seuros/capistrano-puma"
 end
 

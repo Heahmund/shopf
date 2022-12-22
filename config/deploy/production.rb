@@ -7,7 +7,7 @@ role :app, fetch(:domain)
 role :db,  fetch(:domain), :primary => true
 
 set :branch, 'master'
-set :deploy_to, "/home/wicked/www/shopf"
+set :deploy_to, "/home/wicked/www/51.250.71.158"
 set :tmp_dir, '/home/wicked/www/tmp'
 set :keep_releases, 20
 

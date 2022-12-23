@@ -60,7 +60,7 @@ group :development do
   gem 'capistrano-passenger', require: false
   gem 'capistrano3-monit', require: false
   gem 'capistrano-rake', require: false
-  gem 'redis', '~> 4.0'
+  gem 'redis', '~> 3.0'
   gem 'redis-namespace'
   gem 'redis-rails'
   gem 'redis-rack-cache'
